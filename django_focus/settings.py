@@ -53,12 +53,14 @@ CORS_ALLOWED_ORIGINS = [
     "http://localhost:8080",
     "http://localhost:8081",
     "https://onefocus.heroku.com",
+    "https://onefocus.netlify.app",
 ]
 
 CORS_ORIGIN_WHITELIST = [
     "http://localhost:8080",
     "http://localhost:8081",
     "https://onefocus.heroku.com",
+    "https://onefocus.netlify.app",
 ]
 
 MIDDLEWARE = [
