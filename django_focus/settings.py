@@ -27,7 +27,8 @@ SECRET_KEY = 'django-insecure-pxuuw$t=d97qovpi(y!fqq$^38e#m59(-@rd8#i1$v5y(*g2mc
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+# ALLOWED_HOSTS = ['192.168.1.126:8000']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -49,19 +50,25 @@ INSTALLED_APPS = [
 ]
 
 
-CORS_ALLOWED_ORIGINS = [
-    "http://localhost:8080",
-    "http://localhost:8081",
-    "https://onefocus.heroku.com",
-    "https://onefocus.netlify.app",
-]
+# CORS_ALLOWED_ORIGINS = [
+#     "http://localhost:8080",
+#     "http://localhost:8081",
+#     "https://onefocus.heroku.com",
+#     "https://onefocus.netlify.app",
+#     "http://192.168.1.126:8000",
+# ]
 
-CORS_ORIGIN_WHITELIST = [
-    "http://localhost:8080",
-    "http://localhost:8081",
-    "https://onefocus.heroku.com",
-    "https://onefocus.netlify.app",
-]
+
+# CORS_ORIGIN_WHITELIST = [
+#     "http://localhost:8080",
+#     "http://localhost:8081",
+#     "https://onefocus.heroku.com",
+#     "https://onefocus.netlify.app",
+#     "http://192.168.1.126:8000",
+# ]
+
+CORS_ALLOW_ALL_ORIGINS = True
+CORS_ORIGIN_ALLOW_ALL = True
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
